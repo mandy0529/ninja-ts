@@ -30,6 +30,25 @@ console.log(objects, '4. object 2');
 // union
 var mixedArray = [];
 var minjiArray = [];
+var numberOrString = 0;
+var object = {};
+var newObj;
+console.log(object, '1');
+object = {
+    name: 'minji',
+    age: 26,
+    job: true
+};
+console.log(object, '2');
+newObj = {
+    name: 'gan',
+    age: 27,
+    job: false
+};
+console.log(newObj);
+console.log(numberOrString, '??');
+numberOrString = 'minji';
+console.log(numberOrString, '??2');
 mixedArray.push('minji', 3, true);
 console.log(mixedArray, '5. union mixed array');
 minjiArray.push('gan', 'minji');
