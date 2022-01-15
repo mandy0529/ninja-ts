@@ -1,30 +1,46 @@
+// 1. type
 let person = 'minji';
 let number = 2;
+
+const minji = (name: string, number: number) => {
+  person = name;
+  console.log(number, person, '1. type');
+};
+
+minji('gan', 3);
+
+// 2. array
 let groups = ['minji', 'gan', true, 3];
+
+groups.push('cooper', false, 5);
+groups[0] = 'type';
+console.log(groups, '2. array type');
+
+// 3. object
 let objects = {
   name: 'logger',
   age: 26,
   job: true,
 };
 
-const minji = (name: string, number: number) => {
-  person = name;
-  console.log(number, person);
-};
-
-minji('gan', 3);
-
-groups.push('cooper', false, 5);
-groups[0] = 'type';
-console.log(groups);
-
 objects.name = 'minji';
 objects.age = 16;
 objects.job = true;
-console.log(objects, '1');
+console.log(objects, '3. object 1');
 objects = {
   name: 'gan',
   age: 26,
   job: false,
 };
-console.log(objects, '2');
+console.log(objects, '4. object 2');
+
+// union
+
+let mixedArray: (string | number | boolean)[] = [];
+let minjiArray: string[] = [];
+
+mixedArray.push('minji', 3, true);
+console.log(mixedArray, '5. union mixed array');
+
+minjiArray.push('gan', 'minji');
+console.log(minjiArray);
