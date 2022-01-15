@@ -7,7 +7,7 @@ const minji = (name: string, number: number) => {
   console.log(number, person, '1. type');
 };
 
-minji('gan', 3);
+minji('gan', 4);
 
 // 2. array
 let groups = ['minji', 'gan', true, 3];
