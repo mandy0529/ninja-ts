@@ -70,3 +70,12 @@ console.log(mixedArray, '5. union mixed array');
 
 minjiArray.push('gan', 'minji');
 console.log(minjiArray);
+
+//  function
+let greet: Function;
+
+greet = (a: number, b: number) => {
+  console.log(a, b);
+};
+
+greet('minji', 'gan');

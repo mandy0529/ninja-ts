@@ -54,3 +54,9 @@ mixedArray.push('minji', 3, true);
 console.log(mixedArray, '5. union mixed array');
 minjiArray.push('gan', 'minji');
 console.log(minjiArray);
+//  function
+let greet;
+greet = (a, b) => {
+    console.log(a, b);
+};
+greet('minji', 'gan');
