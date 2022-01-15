@@ -1,12 +1,4 @@
-interface isSaturday {
-  do: string;
-  date: string;
-  who: string;
-  why: string;
-  hours: number;
-  eat(food: string): void;
-  money(amount: number): number;
-}
+import {isSaturday} from './interface/HasInterface.js';
 
 const saturday: isSaturday = {
   do: 'eat something foods',
@@ -23,10 +15,10 @@ const saturday: isSaturday = {
   },
 };
 
-console.log(saturday, ' saturday');
+// console.log(saturday, ' saturday');
 
 const dateWithBoyFriend = (date: isSaturday) => {
   console.log(date.do, '1');
 };
 
-dateWithBoyFriend(saturday);
+// dateWithBoyFriend(saturday);

@@ -1,4 +1,6 @@
-export class Diary2 {
+import {hasInterface} from './../interface/HasInterface';
+
+export class Diary2 implements hasInterface {
   constructor(
     readonly writer: string,
     private detail: string,

@@ -1,4 +1,3 @@
-"use strict";
 const saturday = {
     do: 'eat something foods',
     date: '15/01/2021',
@@ -13,8 +12,9 @@ const saturday = {
         return amount;
     },
 };
-console.log(saturday, ' saturday');
+// console.log(saturday, ' saturday');
 const dateWithBoyFriend = (date) => {
     console.log(date.do, '1');
 };
-dateWithBoyFriend(saturday);
+export {};
+// dateWithBoyFriend(saturday);
