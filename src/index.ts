@@ -72,6 +72,7 @@ minjiArray.push('gan', 'minji');
 console.log(minjiArray);
 
 //  function
+// 내가 봤을땐 아직까지 function을 이렇게 type화 하는건 의미가없음. any type같음
 let greet: Function;
 
 greet = (a: number, b: number) => {
@@ -79,3 +80,19 @@ greet = (a: number, b: number) => {
 };
 
 greet('minji', 'gan');
+
+// alias
+
+type StringOrNumber = string | number;
+type ObjWithName = {name: 'minji'; age: 27; item: StringOrNumber};
+type UserObj = {id: number; title: string; path: string};
+
+const alias = (item: StringOrNumber) => {
+  console.log(item);
+};
+
+const aliasMinji = (user: ObjWithName) => {
+  console.log(user, 'user');
+};
+alias('minji');
+aliasMinji({name: 'minji', age: 27, item: 'MINJI ITEM'});

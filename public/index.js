@@ -55,8 +55,17 @@ console.log(mixedArray, '5. union mixed array');
 minjiArray.push('gan', 'minji');
 console.log(minjiArray);
 //  function
+// 내가 봤을땐 아직까지 function을 이렇게 type화 하는건 의미가없음. any type같음
 let greet;
 greet = (a, b) => {
     console.log(a, b);
 };
 greet('minji', 'gan');
+const alias = (item) => {
+    console.log(item);
+};
+const aliasMinji = (user) => {
+    console.log(user, 'user');
+};
+alias('minji');
+aliasMinji({ name: 'minji', age: 27, item: 'MINJI ITEM' });
