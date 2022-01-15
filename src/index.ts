@@ -84,15 +84,23 @@ greet('minji', 'gan');
 // alias
 
 type StringOrNumber = string | number;
-type ObjWithName = {name: 'minji'; age: 27; item: StringOrNumber};
 type UserObj = {id: number; title: string; path: string};
 
 const alias = (item: StringOrNumber) => {
   console.log(item);
 };
 
-const aliasMinji = (user: ObjWithName) => {
+const aliasMinji = (user: UserObj) => {
   console.log(user, 'user');
 };
 alias('minji');
-aliasMinji({name: 'minji', age: 27, item: 'MINJI ITEM'});
+aliasMinji({id: 3, title: 'minji', path: 'MINJI ITEM'});
+
+//1.  function signature
+
+let cooper: (a: string, b: number) => void;
+
+cooper = (name: string, age: number) => {
+  console.log(name, age);
+};
+cooper('cooper', 8);

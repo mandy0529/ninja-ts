@@ -68,4 +68,10 @@ const aliasMinji = (user) => {
     console.log(user, 'user');
 };
 alias('minji');
-aliasMinji({ name: 'minji', age: 27, item: 'MINJI ITEM' });
+aliasMinji({ id: 3, title: 'minji', path: 'MINJI ITEM' });
+//1.  function signature
+let cooper;
+cooper = (name, age) => {
+    console.log(name, age);
+};
+cooper('cooper', 8);
